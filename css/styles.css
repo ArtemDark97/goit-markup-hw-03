@@ -53,6 +53,10 @@ p {
   overflow: hidden;
 }
 
+ .site-nav .link.current {
+  color: var(--text-selection-color);
+}
+
 img {
   display: block;
 }
@@ -66,7 +70,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   width: 1158px;
-  padding: 15px 15px;
+  padding: 0px 15px;
 }
 
 .no-underline {
@@ -86,6 +90,7 @@ img {
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .studio {
@@ -95,6 +100,7 @@ img {
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .site-nav {
@@ -170,8 +176,8 @@ img {
   margin-top: 0;
   text-align: center;
   display: block;
-  padding-top: 180px;
-  padding-bottom: 203px;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-title {
@@ -238,10 +244,16 @@ img {
   margin-top: 0;
 }
 
+.section-feature {
+  padding-top: 105px;
+  padding-bottom: 120px;
+}
+
 .feature {
-  margin-top: 105px;
-  margin-bottom: 120px;
   display: flex;
+}
+
+.feature .item {
   width: calc(100% - 72px / 4);
 }
 
@@ -260,8 +272,11 @@ img {
 
 .task {
   margin-top: 72px;
-  padding-bottom: 120px;
   display: flex;
+}
+
+.section-work {
+  padding-bottom: 120px;
 }
 
 .task .item + .item {
@@ -312,7 +327,7 @@ img {
   display: flex;
 }
 
-.main-footer {
+.bottom {
   padding-top: 76px;
   padding-bottom: 100px;
 }
